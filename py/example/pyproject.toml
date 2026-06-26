@@ -1,0 +1,25 @@
+[project]
+name = "example"
+version = "0.1.0"
+description = "example - python"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = ["ipython>=9.10.0", "pytest>=9.0.2", "ruff>=0.15.1"]
+
+[project.scripts]
+example = "example:main"
+
+[build-system]
+requires = ["uv_build>=0.9.24,<0.10.0"]
+build-backend = "uv_build"
+
+# pyproject.toml
+[tool.pytest]
+minversion = "9.0"
+addopts = ["-rAs"]
+testpaths = ["tests"]
+python_classes = ["Test*", "Describe*", "When*", " It*"]
+python_files = ["*_test.py"]
