@@ -1,0 +1,14 @@
+/* removed almost all vite boilerplate */
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  font:
+    18px/145% system-ui,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
